@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">元宝派防护</string>
+    <string name="app_subtitle">公式渲染防火墙</string>
+
+    <string name="section_switch">防护开关</string>
+    <string name="sw_master">总开关</string>
+    <string name="sw_master_desc">关掉后模块完全不介入，等同于未安装</string>
+    <string name="sw_latex">LaTeX 防护</string>
+    <string name="sw_latex_desc">检测公式刷屏、递归宏、尺寸炸弹</string>
+    <string name="sw_kill">踹飞公式渲染</string>
+    <string name="sw_kill_desc">直接让 LaTeX 插件失效，所有公式只显示源码。最狠也最稳</string>
+    <string name="sw_macro">拦截危险宏</string>
+    <string name="sw_macro_desc">移除 \\def \\newcommand \\input 等可构造无限递归的命令</string>
+    <string name="sw_toast">熔断时弹提示</string>
+    <string name="sw_toast_desc">在元宝派里弹一条 Toast，告诉你刚才为什么没渲染</string>
+    <string name="sw_notify">熔断时发通知</string>
+    <string name="sw_notify_desc">锁屏/后台时也能知道有人正在刷公式</string>
+
+    <string name="section_threshold">阈值</string>
+    <string name="threshold_window">每秒最多渲染公式数</string>
+    <string name="threshold_chars">单个公式字符上限</string>
+    <string name="threshold_hint">调低更安全，调高更清晰。改动实时生效，不用重启宿主。</string>
+
+    <string name="section_events">最近事件</string>
+    <string name="events_empty">还没有拦截记录。\n如果有人拿公式刷屏，这里会出现。</string>
+    <string name="action_clear">清空</string>
+    <string name="action_test">发一条测试通知</string>
+    <string name="cleared">已清空</string>
+    <string name="test_sent">已发送测试通知</string>
+    <string name="test_denied">通知权限未开启，去系统设置里允许一下</string>
+
+    <string name="status_active">正在保护 · 24 小时拦截 %1$d 次 · 涉及 %2$d 个公式</string>
+    <string name="status_idle">已关闭</string>
+
+    <string name="notify_channel_name">防护事件</string>
+    <string name="notify_channel_desc">公式刷屏、渲染崩溃等防护提示</string>
+
+    <string name="detail_title">详情</string>
+</resources>
